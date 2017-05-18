@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="{{ url_for('static',filename='js/script.js') }}"></script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <body>
+        <nav class="navbar navbar-inverse navbar-static-top">
+        	<div class="container">
+        		<div class="navbar-header">
+                    <button type="button" class="btn btn-default" onclick="myLinkedIn()">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </button>
+        			<button type="button" class="btn btn-default navbar-btn" onclick=myResume()>Resume</button>
+            		<button type="button" class="btn btn-default navbar-btn" onclick="IEFunction()">Industrial Engineering</button>
+                    <button type="button" class="btn btn-default navbar-btn" onclick="CSFunction()">Computer Science</button>
+
+                </div>
+        	</div>
+        </nav>
+        <div class="jumbotron">
+        	<div class="container">
+                <h1>Engineer. Programmer. Smita.</h1>
+            </div>
+        </div>
+
+        <!-- <img src="me.jpg" alt="Smita's Picture" style="width:304px;height:304px;"> -->
+        <script src="practice.js"></script>
+    </body>
+</html>

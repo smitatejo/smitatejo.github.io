@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <title>CS Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="{{ url_for('static',filename='js/script.js') }}"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="practice.js"></script>
+    <body>
+        <nav class="navbar navbar-inverse navbar-static-top">
+        	<div class="container">
+        		<div class="navbar-header">
+                    <button type="button" class="btn btn-default" onclick="myLinkedIn()">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="btn btn-default navbar-btn" onclick="HomePage()">Home Page</button>
+        			<button type="button" class="btn btn-default navbar-btn" onclick=myResume()>Resume</button>
+            		<button type="button" class="btn btn-default navbar-btn" onclick="IEFunction()">Industrial Engineering</button>
+                </div>
+        	</div>
+        </nav>
+        <div class="jumbotron">
+        	<div class="container">
+                <h1>Programmer.</h1>
+            </div>
+        </div>
+        <div>
+            <div>
+                <button type="button" class="btn btn-default" onclick="showAdv()" id="levels">Advanced:</button>
+                <button type="button" class="btn btn-default" id="adv">
+                    <i class="devicon-python-plain-wordmark"></i>
+                    <i class="devicon-mysql-plain-wordmark"></i>
+                </button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-default" onclick="showInt()" id="levels">Intermediate:</button>
+                <button type="button" class="btn btn-default" id="intermediate">
+                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-github-plain-wordmark"></i>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain"></i>
+                </button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-default" onclick="showBasic()" id="levels">Basic:</button>
+                <button type="button" class="btn btn-default" id="basic">
+                    <i class="devicon-java-plain-wordmark"></i>
+                    <i class="devicon-c-plain-wordmark"></i>
+                    <i class="devicon-linux-plain"></i>
+                    <i class="devicon-ubuntu-plain-wordmark"></i>
+                    <i class="devicon-mongodb-plain-wordmark"></i>
+
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
